@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+   android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+
+        android:src="@drawable/ic_signup"
+        android:layout_width="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:hint="Name"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/emailET"
+        android:hint="Email"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:hint="Password"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </EditText>
+
+    <Button
+        android:id="@+id/signupBTN"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Already have an account?"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/signinTV"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/signup"
+            android:textSize="16sp"
+            android:textColor="#1336F8"
+            android:onClick="signinTV"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
